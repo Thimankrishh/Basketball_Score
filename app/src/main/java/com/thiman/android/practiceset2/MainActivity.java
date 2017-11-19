@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
- int points = 0;
+
+ int pointsTA = 0;
+ int pointsTB = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,23 +18,41 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void start(View view){
-        displayScore(points);
+        displayScoreTA(0);
+        displayScoreTB(0);
     }
 
     public void p1(View view){
-        points = points + 1;
-        displayScore(points);
+        pointsTA = pointsTA + 1;
+        displayScoreTA(pointsTA);
     }
 
     public void p2(View view){
-        points = points + 2;
-        displayScore(points);
+        pointsTA = pointsTA + 2;
+        displayScoreTA(pointsTA);
     }
 
     public void p3(View view){
-         points = points + 3;
-        displayScore(points);
+        pointsTA = pointsTA + 3;
+        displayScoreTA(pointsTA);
     }
+
+    public void p1b(View view){
+        pointsTB = pointsTB + 1;
+        displayScoreTB(pointsTB);
+    }
+
+    public void p2b(View view){
+        pointsTB = pointsTB + 2;
+        displayScoreTB(pointsTB);
+    }
+
+    public void p3b(View view){
+        pointsTB = pointsTB + 3;
+        displayScoreTB(pointsTB);
+    }
+
+
     /**
      * Display methods that allow the text to appear on the screen. Don't worry if you don't know
      * how these work yet. We'll be covering them in lesson 3.
@@ -40,12 +60,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private void displayScore(int points) {
+    private void displayScoreTA(int points) {
         TextView t = (TextView) findViewById(R.id.display_text_view_2);
-        t.setText(String.valueOf(points));
+        t.setText(String.valueOf(pointsTA));
     }
 
-
+    private void displayScoreTB(int points) {
+        TextView t = (TextView) findViewById(R.id.display_tBtext_view_2);
+        t.setText(String.valueOf(pointsTB));
+    }
 
     }
 
