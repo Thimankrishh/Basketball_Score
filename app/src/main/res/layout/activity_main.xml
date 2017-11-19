@@ -1,7 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="com.thiman.android.practiceset2.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -46,11 +53,7 @@
             android:onClick="p1"
             android:text="Free Throw" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="start"
-            android:text="Start" />
+
 
     </LinearLayout>
 
@@ -97,11 +100,25 @@
             android:onClick="p1b"
             android:text="Free Throw" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="start"
-            android:text="Start" />
+
     </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="Start"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:text="Reset"
+        />
 
 </LinearLayout>

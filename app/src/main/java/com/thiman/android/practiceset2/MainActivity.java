@@ -51,7 +51,12 @@ public class MainActivity extends AppCompatActivity {
         pointsTB = pointsTB + 3;
         displayScoreTB(pointsTB);
     }
-
+   public void reset(View view){
+       pointsTA = 0;
+       pointsTB = 0;
+       displayScoreTA(0);
+       displayScoreTB(0);
+   }
 
     /**
      * Display methods that allow the text to appear on the screen. Don't worry if you don't know
@@ -69,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         TextView t = (TextView) findViewById(R.id.display_tBtext_view_2);
         t.setText(String.valueOf(pointsTB));
     }
+
 
     }
 
