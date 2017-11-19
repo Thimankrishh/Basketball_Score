@@ -30,7 +30,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Team A"
-            android:textSize="45sp" />
+            android:padding="16dp"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#616161"
+            />
 
         <TextView
             android:id="@+id/display_text_view_2"
@@ -38,25 +42,39 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text=""
-            android:textSize="45sp" />
+            android:textSize="56sp"
+            android:paddingTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="p3"
-            android:text="+3 Points" />
+            android:text="+3 Points"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="p2"
-            android:text="+2 Points" />
+            android:text="+2 Points"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="p1"
-            android:text="Free Throw" />
+            android:text="Free Throw"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
 
 
 
@@ -77,33 +95,52 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Team B"
-            android:textSize="45sp" />
+            android:padding="16dp"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#616161"
+            />
 
         <TextView
             android:id="@+id/display_tBtext_view_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:paddingTop="16dp"
             android:text=""
-            android:textSize="45sp" />
+            android:textSize="56sp"
+            android:fontFamily="sans-serif-light"
+
+            android:layout_marginBottom="24dp"
+            android:textColor="#000000"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="p3b"
-            android:text="+3 Points" />
+            android:text="+3 Points"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="p2b"
-            android:text="+2 Points" />
+            android:text="+2 Points"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="p1b"
-            android:text="Free Throw" />
+            android:text="Free Throw"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
 
 
     </LinearLayout>
